@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root {
+  --main-background-color: #1f2641;
+  --secondary-background-color: rgb(0, 195, 255);
+  --main-padding-top: 30px;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Standard button */
+
+/* end global roots  */
+/* start nav section */
+nav {
+  background: var(--secondary-background-color);
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav-menu a {
+  font-size: 0.9rem;
+  color: white;
+}
+.container  h4{
+    color: white;
+}
+.nav-menu a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* end nav section */
