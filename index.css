@@ -6,13 +6,14 @@
 }
 :root {
   --main-background-color: #1f2641;
-  --secondary-background-color: rgb(0, 195, 255);
-  --main-padding-top: 30px;
+  --secondary-background-color: #2e3267;
+  --main-padding-top: 50px;
 }
 body {
   font-family: "Courier New", Courier, monospace;
   line-height: 1.7;
   scroll-behavior: smooth;
+  font-weight: normal;
 }
 li {
     list-style: none;
@@ -21,22 +22,33 @@ li a{
     text-decoration: none;
 }
 .container {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
 /* Standard button */
-
+button.btn{
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+    font-weight: 500;
+    background: #f75842;
+    color: white;
+}
+button.btn:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
 /* end global roots  */
 /* start nav section */
 nav {
   background: var(--secondary-background-color);
-  width: 100vw;
-  height: 5rem;
-  position: fixed;
+  /* width: 100vw; */
+  height: 4rem;
+  /* position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 11; */
 }
 .nav-container {
   height: 100%;
@@ -60,7 +72,146 @@ nav button {
     color: white;
 }
 .nav-menu a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(39, 223, 223);
 }
-
 /* end nav section */
+.home{
+    padding: 30px;
+    background-color: var(--main-background-color);
+}
+.home .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.home .text{
+    color: white;
+    padding-right: 30px;
+}
+.home .image img{
+    width: 50vw;
+    height: 75vh;
+}
+.home .text h1{
+    padding-bottom: 10px;
+}
+.home .text p{
+    padding-bottom: 30px;
+}
+.home button.btn{
+background: #f75842;
+color: white;
+}
+.home button.btn:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+/* end home section */
+
+/* start Category */
+.categories{
+    background-color: #2e3267;
+    padding-top: 125px;
+    height:  32rem;
+}
+.categories .container{
+    display: grid;
+    grid-template-columns: 40% 60%; 
+}
+.categories .text{
+    color: white;
+    padding-right: 30px;
+}
+.categories .text h1{
+    padding-bottom: 10px;
+}
+.categories .text p{
+    padding-bottom: 60px;
+}
+.categories button{
+    background-color: white;
+    border: transparent;
+    color: var(--main-background-color) ;
+}
+.categories button:hover{
+    background: transparent;
+    border: 2px solid white;
+   
+}
+.categories .category-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.2rem;
+    color: white;
+ }
+ .categories .category-box .category:hover{
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.1);
+    z-index: 1;
+ }
+
+ .categories .category-box .category{
+    padding: 10px;
+    background-color:#4248904d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+ }
+ .categories_icons{
+    background: var(--secondary-background-color);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+ .categories .category-box .category p{
+    padding: 10px;
+    margin: 1rem 0 3rem;
+ }
+ .categories .category-box .category h5{
+    padding-top: 1rem;
+ }
+ .category:nth-child(2) .categories_icons{
+    background: #f75842 ;
+}
+.category:nth-child(3) .categories_icons{
+    background: #00bf8e;
+}
+.category:nth-child(4) .categories_icons{
+    background: #f7c94b;
+}
+.category:nth-child(5) .categories_icons{
+    background: #00bf8e;
+}
+/* end Category section*/
+
+/* start popular course */
+.courses{
+  background-color: var(--main-background-color);
+  padding-top: var(--main-padding-top) ;
+}
+.courses .text {
+  font-size: 30px;
+  padding-top: 15%;
+}
+.row{
+    padding-top: 5%;
+}
+.card-body{
+    background-color: var(--secondary-background-color);
+    outline: 0;
+}
+.card-body:hover{
+    background: var(--main-background-color);
+    border: 1px solid var(--secondary-background-color);
+    transition: all 0.3s ease-out;
+}
+.card-body h5{
+    font-weight: bold;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.card-body p{
+    padding-bottom:1rem;
+}
+/* end popular course */
