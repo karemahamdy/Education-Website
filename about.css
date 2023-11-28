@@ -1,0 +1,48 @@
+.about{
+    background-color: var(--main-background-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.about .acheivement{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.about .box{
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.about img{
+    width: 75%;
+}
+.achievement-icon{
+margin-bottom: 2rem;
+font-size: 2rem;
+background: #f75842;
+padding: 0.6rem 0.8rem;
+border-radius: 1rem;
+}
+.achievement-icon:nth-child(2){
+    background: #00bf8e;
+}
+h3 {
+    padding-top: 10px;
+}
+/* end achievment section */
+/* start our team */
+.team{
+    background-color: var(--secondary-background-color);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+}
+.team-card.card{
+    border:10px;
+    border-color: var(--secondary-background-color);
+}
+/* end our team */
