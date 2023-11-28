@@ -72,7 +72,7 @@ nav button {
     color: white;
 }
 .nav-menu a:hover {
-  color: rgb(39, 223, 223);
+  color:#00bf8e;
 }
 /* end nav section */
 .home{
@@ -215,3 +215,79 @@ color: white;
     padding-bottom:1rem;
 }
 /* end popular course */
+/* start questions section */
+.question{
+    background-color: var(--secondary-background-color);
+}
+.questions{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 1.2rem;
+}
+.question .questions .block{
+    background-color: #6c63ff;
+    padding: 2rem;
+    height: fit-content;
+}
+.question .questions .block  i{
+    color: white;
+}
+.question .questions .block p{
+    color: white;
+    padding: 1rem;
+    font-weight: normal;
+    display: none;
+}
+/* end questions section */
+/* start Student's Testimonials section */
+
+/* end Student's Testimonials section */
+/* start footer */
+footer{
+    background-color: var(--main-background-color);
+    color: white;
+    padding: 2rem;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    line-height: 2;
+}
+.footer a{
+    color: white;
+}
+.footer a:hover{
+    color:#00bf8e;
+}
+
+.footer_socials ul{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footer_socials  i{
+    padding: 10px 5px;
+    font-size: 25px;
+}
+.footer_socials  i:hover{
+    color:#00bf8e;   
+}
+/* end footer */
+/* up button */
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: white;
+    color: #f75842;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: Arial, Tahoma;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .up.show {
+    right: 10px;
+  }
