@@ -38,11 +38,10 @@ h3 {
 /* end achievment section */
 /* start our team */
 .team{
-    background-color: var(--secondary-background-color);
+    background-color: var(--main-background-color);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
 }
-.team-card.card{
-    border:10px;
+.card{
     border-color: var(--secondary-background-color);
 }
 /* end our team */
