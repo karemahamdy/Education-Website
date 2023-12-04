@@ -14,11 +14,11 @@
 
 .contact_aside{
     color: white;
-    background: var(--main-background-color);
+    background: rgb(81, 77, 148);
     padding: 2rem;
     border-radius: 1rem;
     position: relative;
-    bottom: 7rem;
+    bottom: 6.5rem;
     left: -3.1rem;
 }
 img{
@@ -52,7 +52,7 @@ img{
     transition: var(--transition);
 }
 .contact_socials a:hover{
-    background: transparent;
+    background: #6c63ff;
 }
 /* ================== FORM ==================   */
 .contact_form{
