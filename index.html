@@ -225,6 +225,79 @@
     </div>
     <!--end ask question section -->
     <!-- start Student's Testimonials section -->
+    <section class=" testimonials_container swiper mySwiper">
+        <div class="container">
+        <h2 class="text-center p-5 text-light">Student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./image/avatar1.jpg">
+                </div>
+                <div class="testimonials_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium voluptatem, temporibus, facere veritatis neque laborum quis accusamus laudantium cumque hic modi! Cumque quo recusandae dolor illum quisquam consectetur ipsum?</p>
+                </div>
+            </article>
+    
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./image/avatar2.jpg">
+                </div>
+                <div class="testimonials_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium voluptatem, temporibus, facere veritatis neque laborum quis accusamus laudantium cumque hic modi! Cumque quo recusandae dolor illum quisquam consectetur ipsum?</p>
+                </div>
+            </article>
+    
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./image/avatar3.jpg">
+                </div>
+                <div class="testimonials_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium voluptatem, temporibus, facere veritatis neque laborum quis accusamus laudantium cumque hic modi! Cumque quo recusandae dolor illum quisquam consectetur ipsum?</p>
+                </div>
+            </article>
+    
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./image/avatar4.jpg">
+                </div>
+                <div class="testimonials_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium voluptatem, temporibus, facere veritatis neque laborum quis accusamus laudantium cumque hic modi! Cumque quo recusandae dolor illum quisquam consectetur ipsum?</p>
+                </div>
+            </article>
+    
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./image/avatar5.jpg">
+                </div>
+                <div class="testimonials_info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusantium voluptatem, temporibus, facere veritatis neque laborum quis accusamus laudantium cumque hic modi! Cumque quo recusandae dolor illum quisquam consectetur ipsum?</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+    
     <!-- end Student's Testimonials section -->
     <!-- start footer -->
     <footer>
@@ -276,6 +349,23 @@
     <!-- up button -->
     <span class="up">Up</span>
 </body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // When window width is >=600px
+      breakpoints:{
+        600: {
+            slidesPerView:2
+        }
+      }
+    });
+  </script>
 <script src="./index.js"></script>
+
 
 </html>

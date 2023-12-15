@@ -241,7 +241,48 @@ nav button {
 }
 /* end questions section */
 /* start Student's Testimonials section */
-
+.testimonials_container{
+  background-color: var(--main-background-color);
+  overflow-x: hidden;
+  position: relative;
+  
+}
+.testimonial{
+  padding-top: 2rem;
+  padding-bottom: 5rem;   
+}
+.testimonial h5,
+.testimonial small{
+  color: white;
+}
+.avatar{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -8px auto -1rem;
+  border: 1rem solid var(--main-background-color);
+}
+.testimonials_info{
+  text-align: center;
+}
+.testimonial_body{
+  background: var(--secondary-background-color);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.testimonial_body::before{
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg,transparent,var(--secondary-background-color),var(--secondary-background-color),var(--secondary-background-color));
+  width: 3rem;
+  height: 3rem;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
 /* end Student's Testimonials section */
 /* start footer */
 footer {
