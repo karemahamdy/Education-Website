@@ -47,18 +47,21 @@ button.btn:hover {
 /* end global roots  */
 /* start nav section */
 nav {
-  background: var(--secondary-background-color);
-  /* width: 100vw; */
-  height: 4rem;
-  /* position: fixed;
+    /* position: fixed;
   top: 0;
   z-index: 11; */
+    /* width: 100vw; */
+  background: var(--secondary-background-color);
+  height: 4rem;
 }
 .nav-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+nav img{
+  width: 100px;
 }
 nav button {
   display: none;
@@ -76,7 +79,7 @@ nav button {
   color: white;
 }
 .nav-menu a:hover {
-  color: #00bf8e;
+  color: #98caec !important;
 }
 /* end nav section */
 .home {
