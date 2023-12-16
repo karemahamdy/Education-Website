@@ -1,16 +1,5 @@
-// up button
-// let span = document.querySelector(".up");
-// window.onscroll = function () {
-//   this.scrollY >= 300 ? span.classList.add("show") : span.classList.remove("show");
-// };
 
-// span.onclick = function () {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: "smooth",
-//   });
-// };
-// // show answer of questions
+// // // show answer of questions
 const faqs = document.querySelectorAll('.faq');
 faqs.forEach(faq => {
     faq.addEventListener('click', () =>{
@@ -26,29 +15,43 @@ faqs.forEach(faq => {
     })
 })
 
-// counter number in about section
+
+
 let number = document.querySelectorAll(".box .num");
 let section = document.querySelector(".about");
 let started = false;
+let span = document.querySelector(".up");
 
-// on scroll set function to count
+// on scroll set functions to count and show/hide the up button
 window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop) {
-    if (!started){
+  if (window.scrollY >= 300) {
+    if (!started) {
       number.forEach((num) => startCount(num));
     }
     started = true;
   }
+
+  // Show/hide the up button
+  this.scrollY >= 300
+    ? span.classList.add("show")
+    : span.classList.remove("show");
 };
 
-
-// function to increase elements
-function startCount(count){
+// Function to increase elements
+function startCount(count) {
   let goal = count.dataset.goal;
-  let  counterTime = setInterval(() => {
-  count.textContent++;
-  if( count.textContent == goal){
-    clearInterval(counterTime);
-  }
-}, 2000 / goal);
+  let counterTime = setInterval(() => {
+    count.textContent++;
+    if (count.textContent === goal) {
+      clearInterval(counterTime);
+    }
+  }, 2000 / goal);
 }
+
+// Scroll to the top when the up button is clicked
+span.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
