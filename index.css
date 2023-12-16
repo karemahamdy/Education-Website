@@ -222,28 +222,43 @@ nav button {
 }
 /* end popular course */
 /* start questions section */
-.question {
-  background-color: var(--secondary-background-color);
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3rem inset;
+
+.faqs{
+  background: var(--main-background-color);
+  box-shadow: inset 0 0 3rem rgba(0,0,0,0.5)
 }
-.questions {
+.faqs_container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
-.question .questions .block {
-  background-color: #6c63ff;
+.faq{
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
   height: fit-content;
+  background: var(--secondary-background-color);
+  cursor: pointer;
 }
-.question .questions .block i {
+.faq h4{
+  font-size: 1rem;
+  line-height: 2.2rem;
   color: white;
 }
-.question .questions .block p {
+.faq_icon{
+  align-self: flex-start;
+  font-size: 1.2rem;
   color: white;
-  padding: 1rem;
-  font-weight: normal;
+}
+.faq p{
+  margin-top: 0.8rem;
   display: none;
+  color: white;
+}
+
+.faq.open p{
+  display: block;
 }
 /* end questions section */
 /* start Student's Testimonials section */
