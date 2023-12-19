@@ -152,23 +152,25 @@ background-color:#1f2641 ;
             <div class="shape"></div>
         </div>
    
-        <form>
+        <form id="myform">
             <h3>SignUp Here</h3>
 
             <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username">
+            <input type="text" placeholder="Email or Phone" name="username" id="username">
 
             <label for="Email">Email</label>
-            <input type="text" placeholder="Email" id="Email">
+            <input type="text" placeholder="Email" name="Email" id="Email">
 
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password">
 
             <label for="password">Enter Password again</label>
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Password"  name="password" id="password">
+
+
 
             <div class="login">
-                <button>Log In</button>
+                <button onclick="SubForm()">Log In</button>
             </div>
             <!-- <div class="social">
                 <button class="go"><i class="fab fa-google"></i><a href="https://www.google.com/">Google</a></button>
