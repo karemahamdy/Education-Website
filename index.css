@@ -311,7 +311,16 @@ nav button {
   height: fit-content;
   background: var(--secondary-background-color);
   cursor: pointer;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-150px);
+ transition: all 2s ease;
 }
+.faq.active{
+  transform: translateY(0px)  !important;
+  opacity: 1  !important;
+}
+
 .faq h4{
   font-size: 1rem;
   line-height: 2.2rem;
@@ -331,6 +340,7 @@ nav button {
 .faq.open p{
   display: block;
 }
+
 @media screen and (max-width:600px){
   .faqs_container{
     display: grid;

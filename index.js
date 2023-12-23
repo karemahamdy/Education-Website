@@ -73,3 +73,21 @@ window.addEventListener('scroll',category);
     }
   } 
   category();
+
+  // add animation at faq section
+  window.addEventListener('scroll',faq);
+  function faq(){
+    var category = document.querySelectorAll(".faq")
+    for(var i=0; i< category.length; i++){
+      var windowHeight = window.innerHeight;
+      var categoryTop = category[i].getBoundingClientRect().top;
+      var point = 100;
+      if (categoryTop < windowHeight - point ){
+        category[i].classList.add("active")
+      }
+      else {
+        category[i].classList.remove("active")
+      }
+    }
+  } 
+  faq();
