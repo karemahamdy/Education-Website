@@ -15,8 +15,6 @@ faqs.forEach(faq => {
     })
 })
 
-
-
 let number = document.querySelectorAll(".box .num");
 let section = document.querySelector(".about");
 let started = false;

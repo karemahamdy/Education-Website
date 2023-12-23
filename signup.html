@@ -16,24 +16,29 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <style>
-body {
-background-color:#1f2641 ;
-}
-.background {
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-   top: 50%;
-}
+    body {
+        background-color: #1f2641;
+    }
 
-.background .shape {
- height: 200px;
-  width: 200px;
-   position: absolute;
-   border-radius: 50%;
- }
+    a {
+        color: #1845ad !important;
+    }
+
+    .background {
+        width: 430px;
+        height: 520px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    .background .shape {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
 
     .shape:first-child {
         background: linear-gradient(#1845ad,
@@ -52,7 +57,7 @@ background-color:#1f2641 ;
 
     form {
         height: 687px;
-    width: 479px;
+        width: 479px;
         background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
         transform: translate(-50%, -50%);
@@ -64,12 +69,14 @@ background-color:#1f2641 ;
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
         padding: 50px 35px;
     }
+
     @media screen and (max-width:600px) {
-    form {
-        
-        width: 360px;
+        form {
+
+            width: 360px;
+        }
     }
-}
+
     form * {
         font-family: 'Poppins', sans-serif;
         color: #ffffff;
@@ -156,7 +163,7 @@ background-color:#1f2641 ;
             <div class="shape"></div>
             <div class="shape"></div>
         </div>
-   
+
         <form id="myform">
             <h3>SignUp Here</h3>
 
@@ -170,12 +177,12 @@ background-color:#1f2641 ;
             <input type="password" placeholder="Password" id="password">
 
             <label for="password">Enter Password again</label>
-            <input type="password" placeholder="Password"  name="password" id="password">
+            <input type="password" placeholder="Password" name="password" id="password">
 
 
 
             <div class="login">
-                <button onclick="SubForm()">Log In</button>
+                <button><a href="./index.html">Log In</a></button>
             </div>
             <!-- <div class="social">
                 <button class="go"><i class="fab fa-google"></i><a href="https://www.google.com/">Google</a></button>
