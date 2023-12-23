@@ -55,3 +55,21 @@ span.onclick = function () {
     behavior: "smooth",
   });
 };
+
+// add animation at sections
+window.addEventListener('scroll',category);
+  function category(){
+    var category = document.querySelectorAll(".category")
+    for(var i=0; i< category.length; i++){
+      var windowHeight = window.innerHeight;
+      var categoryTop = category[i].getBoundingClientRect().top;
+      var point = 100;
+      if (categoryTop < windowHeight - point ){
+        category[i].classList.add("active")
+      }
+      else {
+        category[i].classList.remove("active")
+      }
+    }
+  } 
+  category();

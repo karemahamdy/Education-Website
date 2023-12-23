@@ -101,14 +101,14 @@ nav button {
 .home .image img {
   width: 50vw;
   position: relative;
-  animation: up-and-down 5s linear infinite;
+  animation: up-and-down 3s linear infinite;
 }
-@keyframes upAndDown {
+@keyframes up-and-down {
   0%, 100% {
     transform: translateY(0); /* Start and end position */
   }
   50% {
-    transform: translateY(-20px); /* Middle position, adjust as needed */
+    transform: translateY(-15px); /* Middle position, adjust as needed */
   }
 }
 .home .text h1 {
@@ -187,7 +187,6 @@ nav button {
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-
 .categories .category-box .category {
   padding:2px;
   background-color: #4248904d;
@@ -196,6 +195,14 @@ nav button {
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-150px);
+ transition: all 2s ease;
+}
+.category.active{
+  transform: translateY(0px)  !important;
+  opacity: 1  !important;
 }
 .categories_icons {
   background: var(--secondary-background-color);
