@@ -413,6 +413,7 @@ footer {
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  
   line-height: 2;
 }
 .footer a {
@@ -425,6 +426,7 @@ footer {
 .footer_socials ul {
   display: flex;
   align-items: center;
+ 
   padding: 5px;
 }
 .footer_socials i {
@@ -439,6 +441,18 @@ footer {
   margin-top: 4rem;
   padding: 1.2rem 0;
   border-top: 1px solid white;
+}
+@media screen and (max-width:600px){
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer p{
+    font-size: 18px;
+  }
 }
 /* end footer */
 
