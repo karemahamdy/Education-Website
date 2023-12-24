@@ -83,6 +83,12 @@ nav button {
 .nav-menu a:hover {
   color: #98caec !important;
 }
+@media screen and (max-width:600px){
+  .nav_menu{
+      right: 3%;
+  }
+}
+
 /* end nav section */
 
 /* start home section */
