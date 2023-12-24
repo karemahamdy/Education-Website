@@ -74,6 +74,8 @@ input , textarea {
     padding: 1rem;
     background: var(--color-bg);
     color: white;
+    outline: white;
+    border-color: white;
 }
 .contact_form .btn{
     width: max-content;
