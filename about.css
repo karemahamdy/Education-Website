@@ -44,6 +44,11 @@ h3 {
 .card{
     border-color: var(--secondary-background-color);
 }
+.vedio {
+    background-color: var(--main-background-color);
+    display: grid; 
+    justify-content: center;
+}
 /* end our team */
 
 /* make it responsive */
