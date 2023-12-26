@@ -113,7 +113,7 @@ window.addEventListener('scroll',category);
   function registerUser() {
     var username = document.getElementsByName('username').value;
     var password = document.getElementsByName('password').value;
-    var image = document.getElementById('image').files[0];
+    // var image = document.getElementsByName('image').files[0];
 
     // Save username and password to local storage
     localStorage.setItem('username', username);
@@ -143,4 +143,19 @@ function previewImage() {
     } else {
         imagePreview.src = '';
     }
+}
+
+// store user name and password by anither way
+function SubForm (){
+  $.ajax({
+      url:'https://api.apispreadsheets.com/data/410/',
+      type:'post',
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)")
+      },
+      error: function(){
+        alert("There was an error :(")
+      }
+  });
 }
