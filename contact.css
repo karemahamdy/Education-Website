@@ -1,83 +1,113 @@
-.contactUs{
-    background: var(--main-background-color);
+.contactUs {
+  background: var(--main-background-color);
 }
-.section{
-    background: var(--secondary-background-color);
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 4rem;
-    height: 30rem;
-    
-    border-radius: 1rem;
+.section {
+  background: var(--secondary-background-color);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+
+  border-radius: 1rem;
 }
 
-.contact_aside{
-    color: white;
-    background: rgb(81, 77, 148);
-    padding: 2rem;
-    border-radius: 1rem;
-    position: relative;
-    bottom: 6.5rem;
-    left: -3.1rem;
+.contact_aside {
+  color: white;
+  background: rgb(81, 77, 148);
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 6.5rem;
+  left: -3.1rem;
 }
-img{
-    width: 8rem;
-    margin-bottom: 3rem;
+img {
+  width: 8rem;
+  margin-bottom: 3rem;
 }
-.contact_aside h2{
-    text-align: left;
-    margin-bottom: 1rem;
-} 
-.contact_aside p{
-    font-size: 0.6rem;
-    margin-bottom: 2rem;
-} 
-.contact_details li{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
+.contact_aside h2 {
+  text-align: left;
+  margin-bottom: 1rem;
 }
-.contact_socials{
-    display: flex;
-    gap: 0.6rem;
-    margin-top: 3rem;
+.contact_aside p {
+  font-size: 0.6rem;
+  margin-bottom: 2rem;
 }
-.contact_socials a{
-    background: var(--secondary-background-color);
-    padding: 0.75rem ;
-    border-radius: 50%;
-    font-size: 1rem;
-    transition: var(--transition);
+.contact_details li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.contact_socials a:hover{
-    background: #6c63ff;
+.contact_socials {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 3rem;
+}
+.contact_socials a {
+  background: var(--secondary-background-color);
+  padding: 0.75rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+.contact_socials a:hover {
+  background: #6c63ff;
 }
 /* ================== FORM ==================   */
-.contact_form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-right: 4rem;
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
 }
-.form_name{
-    display: flex;
-    gap: 1.2rem;
+.form_name {
+  display: flex;
+  gap: 1.2rem;
 }
 .contact_form input[type="text"] {
-    width: 50%;
+  width: 50%;
 }
 
-input , textarea {
-    width: 100%;
-    padding: 1rem;
-    background: var(--color-bg);
-    color: white;
-    outline: white;
-    border-color: white;
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg);
+  color: white;
+  outline: white;
+  border-color: white;
 }
-.contact_form .btn{
-    width: max-content;
-    cursor: pointer;
+.contact_form .btn {
+  width: max-content;
+  cursor: pointer;
+}
+/* Add this at the end of your existing CSS */
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .section {
+    grid-template-columns: 100%;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .contact_aside {
+    bottom: 0;
+    left: 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .contact_form {
+    margin-right: 0;
+  }
+
+  .form_name {
+    flex-direction: column;
+  }
+
+  .contact_form input[type="text"] {
+    width: 100%;
+  }
 }

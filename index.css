@@ -184,6 +184,14 @@ nav button#close-menu-btn{
   color: white;
 }
 /* start responsive of home section */
+@media screen and (max-width: 1024px){
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 600px){
   .home {
     padding-top: 5rem;
@@ -284,6 +292,24 @@ nav button#close-menu-btn{
 }
 .category:nth-child(5) .categories_icons {
   background: #00bf8e;
+}
+@media screen and (max-width:1024px){
+  .categories {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+  }
+  .categories .container {
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-content: center;
+  }
+  .categories .text p {
+    padding-bottom: 10px;
+  }
+  .categories button{
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width:600px){
   .categories {
